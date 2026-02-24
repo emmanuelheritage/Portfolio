@@ -1,0 +1,113 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+body
+{
+ background-color: rgba(0, 0, 0, 0.927);
+ height: 100vh;
+}
+html
+{
+    font-size: 62.5%;
+}
+/*Header*/
+#header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.0rem 5.0rem;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.189);
+}
+#logo
+{
+    font-size: 4rem;
+    color: aqua;
+}
+#logo #bracket
+{
+    font-size: bolder;
+    color: rgb(255, 204, 0);
+}
+#links
+{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.15rem;
+    gap:2.0rem;
+}
+#links a
+{
+    text-decoration: none;
+    transition: 20ms;
+    padding: 0.65rem;
+}
+#links a:hover
+{
+    color: rgba(0, 0, 0, 0.927);
+    background-color: aqua;
+    padding: 0.65rem;
+    border-radius: 0.5rem;
+}
+#home
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+#home-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+}
+img
+{
+    height:45rem;
+    width:26.1rem;
+}
+#text-container p
+{
+    font-size: 4rem;
+}
+#text-container h1
+{
+    font-size: 5.5rem;
+}
+#text-container h2
+{
+    font-size: 4.5rem;
+    background: linear-gradient(to right, grey, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+#button-container
+{
+    font-size: 2.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+}
+#button-container #resume
+{
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.65rem;
+    background-color: hsl(348, 83%, 50%);
+    border-radius: 0.9rem;
+}
+#symbols
+{
+    font-size: 2.5rem;
+}
