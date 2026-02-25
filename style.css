@@ -29,16 +29,23 @@ html
     width: 100%;
     z-index: 10000;
 }
-#logo
+.logo
 {
     font-size: 4rem;
-    color: #9cdcfe;
+    background: linear-gradient(135deg, aqua, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: "JetBrains Mono", monospace;
 }
-#logo #bracket
+.logo #bracket
 {
     font-size: bolder;
-    color: #ffd700;
     letter-spacing: 0.4rem;
+    background: #ffd700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 #links
 {
@@ -307,4 +314,18 @@ html
 #Contact_ ul a div .ph
 {
     color: rgba(25, 237, 46, 0.968);
+}
+#Footer_
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid rgba(255, 255, 255, 0.1);
+    padding: 5rem;
+    gap:3rem;
+}
+#Footer_ p
+{
+    font-size: 3.5rem;
 }
