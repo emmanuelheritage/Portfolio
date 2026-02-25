@@ -9,6 +9,8 @@ body
 {
  background-color: rgba(0, 0, 0, 0.927);
  height: 100vh;
+ padding: 0;
+ margin: 0;
 }
 html
 {
@@ -22,16 +24,20 @@ html
     justify-content: space-between;
     padding: 2.0rem 5.0rem;
     border-bottom: 1px solid rgba(245, 245, 245, 0.189);
+    background-color: rgba(0, 0, 0, 0.99);
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
 }
 #logo
 {
     font-size: 4rem;
-    color: aqua;
+    color: #9cdcfe;
 }
 #logo #bracket
 {
     font-size: bolder;
-    color: rgb(255, 204, 0);
+    color: #ffd700;
 }
 #links
 {
@@ -55,26 +61,24 @@ html
     padding: 0.65rem;
     border-radius: 0.5rem;
 }
+/*Homepage*/
 #home
 {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0rem;
+    padding: 12rem;
 }
 #home-container
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:5rem;
+    gap:3rem;
 }
-img
-{
-    height:45rem;
-    width:26.1rem;
-}
+
 #text-container p
 {
     font-size: 4rem;
@@ -90,6 +94,18 @@ img
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+#icons
+{
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    gap: 1.0rem;
+}
+#icons
+{
+    font-size: 2.3rem;
+    margin-top: 2.0rem;
 }
 #button-container
 {
@@ -110,4 +126,113 @@ img
 #symbols
 {
     font-size: 2.5rem;
+}
+/*About*/
+#About
+{
+    display: flex;
+    padding: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+#About h1
+{
+    font-size: 5.5rem;
+    font-weight: bolder;
+}
+#about-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:5rem;
+}
+#about-text
+{
+    padding: 0;
+}
+#about-text p
+{
+    font-size: 2rem;
+}
+/*Tech Stack*/
+#Tech-Stack
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*padding: 5rem;*/
+    gap: 7rem;
+}
+#Tech-Stack h1
+{
+    font-size: 5.5rem;
+    font-weight: bolder;
+}
+#card-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5rem;
+}
+.card
+{
+    flex: 1 0 33%;
+    font-size: 5rem;
+    display: flex;
+    justify-content: space-between;
+    /*color: rgba(0, 0, 0, 0.927);*/
+    /* light-mode color: rgb(40, 36, 36);*/
+    padding: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.HTML
+{
+    background-color: chartreuse;
+}
+.HTML .fa-html5
+{
+    background-color: #e34f26;
+}
+.CSS
+{
+    background-color: #00ffff;
+}
+.CSS .fa-css3-alt
+{
+    background-color: #1572b6;
+}
+._js
+{
+    background-color: #f97316;
+}
+._js .fa-js
+{
+    background-color: #f7df1e;
+}
+.Git
+{
+    background-color: rgb(240, 8, 8);
+}
+.Git .fa-git-alt
+{
+    background-color: #f05032;
+}
+
+#Projects_
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3rem
+}
+#Projects_ h1
+{
+    font-size: 5.5rem;
+    font-weight: bolder;
 }

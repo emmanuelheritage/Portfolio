@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/80db182f15.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
     <link rel="stylesheet" href="style.css">
     <title>My Portfolio Site</title>
 </head>
@@ -11,11 +12,11 @@
     <main>
         <!--Header-->
         <header id="header">
-            <div id="logo">Heritage<b id="bracket">( )</b></div>
+            <div id="logo">Heritage<b id="bracket">()</b></div>
             <ul id="links">
                 <li id="Home"><a href="#">Home</a></li>
-                <li id="About"><a href="#">About</a></li>
-                <li id="Experience"><a href="#">Experience</a></li>
+                <li id="about"><a href="#">About</a></li>
+                <li id="Experience"><a href="#">Tech Stack</a></li>
                 <li id="Projects"><a href="#">Projects</a></li>
                 <li id="Contact"><a href="#">Contact</a></li>
             </ul>   
@@ -24,21 +25,62 @@
         <!--Home-->
             <section id="home">
                 <div id="home-container">
-                    <img src="BackgroundEraser_20251120_014353148.png" alt="Profile pic of me">
-                    <div id="text-container"><p>Hi there,</p>
+                    <img src="Pictures\BackgroundEraser_20260225_001149459.png" alt="Profile Pic." id="Homepic">
+                    <div id="text-container">
+                        <p>Hi there,</p>
                         <h1>I'm Falodun Emmanuel</h1>
                         <h2>Frontend Web. Dev.</h2>
+                        <div id="icons">
+                            <i class="fa-brands fa-html5" class="icon"></i>
+                            <i class="fa-brands fa-css3-alt" class="icon"></i>
+                            <i class="fa-brands fa-js" class="icon"></i>
+                            <i class="fa-brands fa-git-alt"></i>
+                        </div>
                     </div>
-                    
                 </div>
                 <div id="button-container">
                         <a href="#" id="resume">Resume <i class="fa-solid fa-download"></i></a>
                         <div id="symbols">
-                            <a href="" id="Github"><i class="fa-brands fa-github" style="color: whitesmoke;"></i></a>
-                            <a href="" id="LinkedIn"><i class="fa-brands fa-square-linkedin" style="color: rgb(30, 19, 186);"></i></a>
-                            <a href="" id="G-mail"><i class="fa-solid fa-envelope" style="color: yellow;"></i></a>
+                            <a href="" target="_blank" id="Github"><i class="fa-brands fa-github" style="color: whitesmoke;"></i></a>
+                            <a href="" target="_blank" id="LinkedIn"><i class="fa-brands fa-square-linkedin" style="color: rgb(30, 19, 186);"></i></a>
+                            <a href="" target="_blank" id="G-mail"><i class="fa-solid fa-envelope" style="color: yellow;"></i></a>
                         </div>
                     </div>
+            </section>
+            <!--About-->
+            <section id="About">
+                <h1>About</h1>
+                <div id="about-container">
+                    <img src="Pictures\BackgroundEraser_20251120_174257944.png" alt="Profile pic of me" id="Abpic">
+                    <div id="about-text">
+                        <p>
+                           <b>Web Developer </b>transitioning to a career in technology.
+                       <br><br>
+                            I am currently focusing on learning and mastering web development skills. <br>
+                                I have a solid foundation
+                            in <b>HTML, CSS</b> and <b>JavaScript</b>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!--Tech Stack-->
+            <section id="Tech-Stack">
+                <h1>Tech Stack</h1>
+                <div id="card-container">
+                    <div class="HTML card">HTML <i class="fa-brands fa-html5" class="icon"></i></div>
+                    <div class="CSS card">CSS <i class="fa-brands fa-css3-alt" class="icon"></i></div>
+                    <div class="_js card">JavaScript <i class="fa-brands fa-js" class="icon"></i></div>
+                    <div class="Git card">Git <i class="fa-brands fa-git-alt"></i></div>
+                </div>
+            </section>
+            <!--Projects-->
+            <section id="Projects_">
+                <h1>Projects</h1>
+                <div id="card-container">
+                    <div class="pcard" id="Card1">Card1</div>
+                    <div class="pcard" id="Card2">Card2</div>
+                    <div class="pcard" id="Card3">Card3</div>
+                </div>
             </section>
     </main>
 </body>
