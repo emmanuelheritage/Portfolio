@@ -38,6 +38,7 @@ html
 {
     font-size: bolder;
     color: #ffd700;
+    letter-spacing: 0.4rem;
 }
 #links
 {
@@ -69,7 +70,7 @@ html
     justify-content: center;
     align-items: center;
     gap: 0rem;
-    padding: 12rem;
+    padding: 12rem 5rem 5rem;
 }
 #home-container
 {
@@ -222,17 +223,88 @@ html
 {
     background-color: #f05032;
 }
-
+/*Projects*/
 #Projects_
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5rem;
     gap:3rem
 }
 #Projects_ h1
 {
     font-size: 5.5rem;
     font-weight: bolder;
+}
+/*Contacts*/
+#Contact_
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    gap:3rem
+}
+#Contact_ h1
+{
+    font-size: 5.5rem;
+    font-weight: bolder;
+}
+#Contact_ p
+{
+    font-size: 2rem;
+}
+#ccard
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
+}
+#Contact_ ul
+{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+#Contact_ ul li 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    flex: 2 0 33%;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.0em 0.5em;
+}
+#Contact_ ul li:hover
+{
+    color:red;
+}
+#Contact_ ul a
+{
+    text-decoration:none;
+}
+#Contact_ ul a:hover
+{
+    color: aqua;
+}
+#Contact_ ul a div
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40rem;
+}
+#Contact_ ul a div .ph
+{
+    color: rgba(25, 237, 46, 0.968);
 }
