@@ -230,6 +230,21 @@ html
 {
     background-color: #f05032;
 }
+/* Experience */
+#Experience_
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    gap:3rem
+}
+#Experience h1
+{
+    font-size: 5.5rem;
+    font-weight: bolder;
+}
 /*Projects*/
 #Projects_
 {
@@ -244,6 +259,14 @@ html
 {
     font-size: 5.5rem;
     font-weight: bolder;
+}
+.pcard
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
 /*Contacts*/
 #Contact_
@@ -327,5 +350,5 @@ html
 }
 #Footer_ p
 {
-    font-size: 3.5rem;
+    font-size: 2rem;
 }
