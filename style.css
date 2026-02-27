@@ -22,7 +22,7 @@ html
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.0rem 5.0rem;
+    padding: 1.5rem 5.0rem;
     border-bottom: 1px solid rgba(245, 245, 245, 0.189);
     background-color: rgba(0, 0, 0, 0.99);
     position: fixed;
@@ -68,6 +68,11 @@ html
     background-color: aqua;
     padding: 0.65rem;
     border-radius: 0.5rem;
+}
+/* Hamburger Icon */
+.hamburger
+{
+    display:none;
 }
 /*Homepage*/
 #home
@@ -139,7 +144,7 @@ html
 #About
 {
     display: flex;
-    padding: 5rem;
+    padding: 7.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -161,13 +166,15 @@ html
 #about-text
 {
     padding: 0;
+    text-align: justify;
+    max-width: 55rem;
 }
 #about-text p
 {
     font-size: 2rem;
 }
 /*Tech Stack*/
-#Tech-Stack
+#TechStack
 {
     display: flex;
     flex-direction: column;
@@ -175,8 +182,9 @@ html
     justify-content: center;
     /*padding: 5rem;*/
     gap: 7rem;
+    padding: 7.5rem;
 }
-#Tech-Stack h1
+#TechStack h1
 {
     font-size: 5.5rem;
     font-weight: bolder;
@@ -237,13 +245,40 @@ html
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
-    gap:3rem
+    padding: 7.5rem;
+    gap:7rem
 }
-#Experience h1
+#Experience_ h1
 {
     font-size: 5.5rem;
     font-weight: bolder;
+}
+#Experience_ #experience-container
+{
+    display: flex;
+    flex-direction: column;
+    gap:5rem;
+}
+#Experience_ #experience-container .exp
+{
+    display: flex;
+    justify-content: space-between;
+    gap:5rem;
+    font-size: 2rem;
+}
+#Experience_ #experience-container .exp .p
+{
+    color: rgb(50, 188, 50);
+}
+#Experience_ #experience-container .exp h4
+{
+    color: powderblue;
+}
+#Experience_ #experience-container .exp .e_para
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
 /*Projects*/
 #Projects_
@@ -252,8 +287,8 @@ html
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
-    gap:3rem
+    padding: 7.5rem;
+    gap:5rem;
 }
 #Projects_ h1
 {
@@ -275,8 +310,8 @@ html
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
-    gap:3rem
+    padding: 7.5rem;
+    gap:7rem
 }
 #Contact_ h1
 {
@@ -345,10 +380,94 @@ html
     justify-content: center;
     align-items: center;
     border: 0.1rem solid rgba(255, 255, 255, 0.1);
-    padding: 5rem;
+    padding: 7.5rem;
     gap:3rem;
 }
 #Footer_ p
 {
     font-size: 2rem;
+}
+/* Images */
+#Homepic
+{
+    background-size: cover;
+}
+
+/* Mobile View */
+
+/* Header */
+
+@media( max-width:1000px )
+{
+    .hamburger
+    {
+        display: block;
+        cursor:pointer;
+    }
+    .hamburger span
+    {
+        display: block;
+        width: 2.5rem;
+        height: 0.3rem;
+        background: whitesmoke;
+        margin: 0.5rem;
+    }
+    #links
+    {
+        display:none;
+        flex-direction: column;
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.927);
+        padding: 2rem;
+        gap:5rem;
+    }
+    #links.active
+    {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        max-height: 100vh;
+    }
+}
+@media(max-width:360px)
+{
+    #header
+    {
+        padding: 1.5rem 3rem;
+    }
+    #home
+    {
+        gap:3rem;
+    }
+    #home-container
+    {
+        display: flex;
+        padding: auto;
+        margin: auto;
+        gap:5rem;
+    }
+    #text-container p
+    {
+        font-size: 2.0rem;
+    }
+    #text-container h1
+    {
+        font-size: 3.5rem;
+    }
+    #text-container h2
+    {
+        font-size: 3.35rem;
+        background: linear-gradient(135deg , grey, rgba(0, 0, 0, 0.481));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    #Homepic
+    {
+        height: 30rem;
+        width: 14rem;
+    }
 }
