@@ -132,7 +132,7 @@ html
 {
     text-decoration: none;
     cursor: pointer;
-    padding: 0.65rem;
+    padding: 0.35em;
     background-color: hsl(348, 83%, 50%);
     border-radius: 0.9rem;
 }
@@ -295,6 +295,17 @@ html
     font-size: 5.5rem;
     font-weight: bolder;
 }
+#card-container
+{
+    display: flex;
+    justify-content: center;
+    top:0;
+    /* align-items: center; */
+}
+.ccontain
+{
+    padding: 0rem;
+}
 .pcard
 {
     display: flex;
@@ -302,6 +313,11 @@ html
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+}
+.pcard p
+{
+    max-width: 20rem;
+    text-align: justify;
 }
 /*Contacts*/
 #Contact_
@@ -432,7 +448,21 @@ html
         max-height: 100vh;
     }
 }
-@media(max-width:360px)
+@media(max-width:410px) 
+{
+    #home
+    {
+        padding: 12rem 1.5rem 5rem;
+    }
+    #home-container
+    {
+        display: flex;
+        padding: auto;
+        margin: auto;
+        gap:3rem;
+    }
+}
+@media(max-width:1000px)
 {
     #header
     {
@@ -447,7 +477,7 @@ html
         display: flex;
         padding: auto;
         margin: auto;
-        gap:5rem;
+        gap:3rem;
     }
     #text-container p
     {
@@ -470,4 +500,57 @@ html
         height: 30rem;
         width: 14rem;
     }
-}
+    #About h1
+    {
+        font-size: 3.5rem;
+        font-weight: bolder;
+    }
+    #About
+    {
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+        margin: auto;
+    }
+    #Abpic
+    {
+        height: 30rem;
+        width: 14rem;
+    }
+    #about-container
+    {
+        flex-direction: column;
+        padding: auto;
+        gap:3rem;
+    }
+    #about-text
+    {
+        padding: auto;
+        text-align: center;
+        max-width: 100%;
+        font-size: 0.6rem;
+    }
+    #TechStack, #Experience_, #Projects_, #Contact_, #Footer_
+    {
+        padding: auto;
+        margin: auto;
+        /* padding-right: 0; */
+    }
+    #Experience .e_para p
+    {
+        width: 100%;
+    }
+    #Projects_ #card-container
+    {
+        justify-content: center;
+        align-items: center;
+    }
+    #Contact_ ul 
+    {
+        flex-direction: column;
+    }
+    #Contact_ ul a div
+    {
+        gap: 15rem;
+    }
+    }
