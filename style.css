@@ -299,8 +299,6 @@ html
 {
     display: flex;
     justify-content: center;
-    top:0;
-    /* align-items: center; */
 }
 .ccontain
 {
@@ -317,7 +315,7 @@ html
 .pcard p
 {
     max-width: 20rem;
-    text-align: justify;
+    text-align: left;
 }
 /*Contacts*/
 #Contact_
@@ -411,10 +409,54 @@ html
 
 /* Mobile View */
 
-/* Header */
 
-@media( max-width:1000px )
+@media (max-width:399px)
 {
+    .card
+{
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    /*color: rgba(0, 0, 0, 0.927);*/
+    /* light-mode color: rgb(40, 36, 36);*/
+    padding: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+}
+@media(max-width:410px) 
+{
+    #home
+    {
+        padding: 12rem 1.5rem 5rem;
+    }
+    #home-container
+    {
+        display: flex;
+        padding: auto;
+        margin: auto;
+        gap:3rem;
+    }
+}
+@media(max-width:540px)
+{
+    #Experience_
+    {
+        padding: 3rem;
+        gap:5rem;
+    }
+    #Experience_ #experience-container .exp
+    {
+        flex-direction: column;
+        gap:1.5rem;
+    }
+    #Experience_ #experience-container .exp .e_para
+    {
+        gap: 0.9rem;
+    }
+}
+@media(max-width:1000px)
+{
+    /* Header */
     .hamburger
     {
         display: block;
@@ -447,23 +489,6 @@ html
         overflow-y: auto;
         max-height: 100vh;
     }
-}
-@media(max-width:410px) 
-{
-    #home
-    {
-        padding: 12rem 1.5rem 5rem;
-    }
-    #home-container
-    {
-        display: flex;
-        padding: auto;
-        margin: auto;
-        gap:3rem;
-    }
-}
-@media(max-width:1000px)
-{
     #header
     {
         padding: 1.5rem 3rem;
@@ -475,6 +500,7 @@ html
     #home-container
     {
         display: flex;
+        justify-content: center;
         padding: auto;
         margin: auto;
         gap:3rem;
@@ -502,14 +528,13 @@ html
     }
     #About h1
     {
-        font-size: 3.5rem;
         font-weight: bolder;
     }
     #About
     {
         justify-content: center;
         align-items: center;
-        padding: auto;
+        padding: 1.5rem;
         margin: auto;
     }
     #Abpic
@@ -520,13 +545,11 @@ html
     #about-container
     {
         flex-direction: column;
-        padding: auto;
         gap:3rem;
     }
     #about-text
     {
-        padding: auto;
-        text-align: center;
+        text-align: left;
         max-width: 100%;
         font-size: 0.6rem;
     }
@@ -534,7 +557,14 @@ html
     {
         padding: auto;
         margin: auto;
-        /* padding-right: 0; */
+    }
+      #TechStack
+      {
+        padding: 2rem;
+      }
+    #TechStack h1
+    {
+        text-align: center;
     }
     #Experience .e_para p
     {
@@ -542,6 +572,7 @@ html
     }
     #Projects_ #card-container
     {
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
