@@ -393,7 +393,8 @@ html
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 0.1rem solid rgba(255, 255, 255, 0.1);
+    width:100%;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.1);
     padding: 7.5rem;
     gap:3rem;
 }
