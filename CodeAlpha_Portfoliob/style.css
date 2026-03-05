@@ -1,0 +1,591 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+body
+{
+ background-color: rgba(0, 0, 0, 0.927);
+ height: 100vh;
+ padding: 0;
+ margin: 0;
+}
+html
+{
+    font-size: 62.5%;
+}
+/*Header*/
+#header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 5.0rem;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.189);
+    background-color: rgba(0, 0, 0, 0.99);
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+}
+.logo
+{
+    font-size: 4rem;
+    background: linear-gradient(135deg, aqua, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: "JetBrains Mono", monospace;
+}
+.logo #bracket
+{
+    font-size: bolder;
+    letter-spacing: 0.4rem;
+    background: #ffd700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+#links
+{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.15rem;
+    gap:2.0rem;
+}
+#links a
+{
+    text-decoration: none;
+    transition: 20ms;
+    padding: 0.65rem;
+}
+#links a:hover
+{
+    color: rgba(0, 0, 0, 0.927);
+    background-color: aqua;
+    padding: 0.65rem;
+    border-radius: 0.5rem;
+}
+/* Hamburger Icon */
+.hamburger
+{
+    display:none;
+}
+/*Homepage*/
+#home
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    padding: 12rem 5rem 5rem;
+}
+#home-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+}
+
+#text-container p
+{
+    font-size: 4rem;
+}
+#text-container h1
+{
+    font-size: 5.5rem;
+}
+#text-container h2
+{
+    font-size: 4.5rem;
+    background: linear-gradient(to right, grey, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+#icons
+{
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    gap: 1.0rem;
+}
+#icons
+{
+    font-size: 2.3rem;
+    margin-top: 2.0rem;
+}
+#button-container
+{
+    font-size: 2.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+}
+#button-container #resume
+{
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.35em;
+    background-color: hsl(348, 83%, 50%);
+    border-radius: 0.9rem;
+}
+#symbols
+{
+    font-size: 2.5rem;
+}
+/*About*/
+#About
+{
+    display: flex;
+    padding: 7.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+#About h1
+{
+    font-size: 5.5rem;
+    font-weight: bolder;
+}
+#about-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:5rem;
+}
+#about-text
+{
+    padding: 0;
+    text-align: justify;
+    max-width: 55rem;
+}
+#about-text p
+{
+    font-size: 2rem;
+}
+/*Tech Stack*/
+#TechStack
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*padding: 5rem;*/
+    gap: 7rem;
+    padding: 7.5rem;
+}
+#TechStack h1
+{
+    font-size: 5.5rem;
+    font-weight: bolder;
+}
+#card-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5rem;
+}
+.card
+{
+    flex: 1 0 33%;
+    font-size: 5rem;
+    display: flex;
+    justify-content: space-between;
+    /*color: rgba(0, 0, 0, 0.927);*/
+    /* light-mode color: rgb(40, 36, 36);*/
+    padding: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.HTML
+{
+    background-color: chartreuse;
+}
+.HTML .fa-html5
+{
+    background-color: #e34f26;
+}
+.CSS
+{
+    background-color: #00ffff;
+}
+.CSS .fa-css3-alt
+{
+    background-color: #1572b6;
+}
+._js
+{
+    background-color: #f97316;
+}
+._js .fa-js
+{
+    background-color: #f7df1e;
+}
+.Git
+{
+    background-color: rgb(240, 8, 8);
+}
+.Git .fa-git-alt
+{
+    background-color: #f05032;
+}
+/* Experience */
+#Experience_
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7.5rem;
+    gap:7rem
+}
+#Experience_ h1
+{
+    font-size: 5.5rem;
+    font-weight: bolder;
+}
+#Experience_ #experience-container
+{
+    display: flex;
+    flex-direction: column;
+    gap:5rem;
+}
+#Experience_ #experience-container .exp
+{
+    display: flex;
+    gap:8rem;
+    font-size: 2rem;
+}
+#Experience_ #experience-container .exp .p
+{
+    color: rgb(50, 188, 50);
+}
+#Experience_ #experience-container .exp h4
+{
+    color: powderblue;
+}
+#Experience_ #experience-container .exp .e_para
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+/*Projects*/
+#Projects_
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7.5rem;
+    gap:5rem;
+}
+#Projects_ h1
+{
+    font-size: 5.5rem;
+    font-weight: bolder;
+}
+#card-container
+{
+    display: flex;
+    justify-content: center;
+}
+.ccontain
+{
+    padding: 0rem;
+}
+.pcard
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.pcard p
+{
+    max-width: 20rem;
+    text-align: left;
+}
+/*Contacts*/
+#Contact_
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7.5rem;
+    gap:7rem
+}
+#Contact_ h1
+{
+    font-size: 5.5rem;
+    font-weight: bolder;
+}
+#Contact_ p
+{
+    font-size: 2rem;
+}
+#ccard
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
+}
+#Contact_ ul
+{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+#Contact_ ul li 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    flex: 2 0 33%;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.0em 0.5em;
+}
+#Contact_ ul li:hover
+{
+    color:red;
+}
+#Contact_ ul a
+{
+    text-decoration:none;
+}
+#Contact_ ul a:hover
+{
+    color: aqua;
+}
+#Contact_ ul a div
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40rem;
+}
+#Contact_ ul a div .ph
+{
+    color: rgba(25, 237, 46, 0.968);
+}
+#Footer_
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.1);
+    padding: 7.5rem;
+    gap:3rem;
+}
+#Footer_ p
+{
+    font-size: 2rem;
+}
+/* Images */
+#Homepic
+{
+    background-size: cover;
+}
+
+/* Mobile View */
+
+
+@media (max-width:399px)
+{
+    .card
+{
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    /*color: rgba(0, 0, 0, 0.927);*/
+    /* light-mode color: rgb(40, 36, 36);*/
+    padding: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+}
+@media(max-width:410px) 
+{
+    #home
+    {
+        padding: 12rem 1.5rem 5rem;
+    }
+    #home-container
+    {
+        display: flex;
+        padding: auto;
+        margin: auto;
+        gap:3rem;
+    }
+}
+@media(max-width:540px)
+{
+    #Experience_
+    {
+        padding: 3rem;
+        gap:5rem;
+    }
+    #Experience_ #experience-container .exp
+    {
+        flex-direction: column;
+        gap:1.5rem;
+    }
+    #Experience_ #experience-container .exp .e_para
+    {
+        gap: 0.9rem;
+    }
+}
+@media(max-width:1000px)
+{
+    /* Header */
+    .hamburger
+    {
+        display: block;
+        cursor:pointer;
+    }
+    .hamburger span
+    {
+        display: block;
+        width: 2.5rem;
+        height: 0.3rem;
+        background: whitesmoke;
+        margin: 0.5rem;
+    }
+    #links
+    {
+        display:none;
+        flex-direction: column;
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.927);
+        padding: 2rem;
+        gap:5rem;
+    }
+    #links.active
+    {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        max-height: 100vh;
+    }
+    #header
+    {
+        padding: 1.5rem 3rem;
+    }
+    #home
+    {
+        gap:3rem;
+    }
+    #home-container
+    {
+        display: flex;
+        justify-content: center;
+        padding: auto;
+        margin: auto;
+        gap:3rem;
+    }
+    #text-container p
+    {
+        font-size: 2.0rem;
+    }
+    #text-container h1
+    {
+        font-size: 3.5rem; 
+    }
+    #text-container h2
+    {
+        font-size: 3.35rem;
+        background: linear-gradient(135deg , grey, rgba(0, 0, 0, 0.481));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    #Homepic
+    {
+        height: 30rem;
+        width: 14rem;
+    }
+    #About h1
+    {
+        font-weight: bolder;
+    }
+    #About
+    {
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+        margin: auto;
+    }
+    #Abpic
+    {
+        height: 30rem;
+        width: 14rem;
+    }
+    #about-container
+    {
+        flex-direction: column;
+        gap:3rem;
+    }
+    #about-text
+    {
+        text-align: left;
+        max-width: 100%;
+        font-size: 0.6rem;
+    }
+    #TechStack, #Experience_, #Projects_, #Contact_
+    {
+        padding: auto;
+        margin: auto;
+    }
+      #TechStack
+      {
+        padding: 2rem;
+      }
+    #TechStack h1
+    {
+        text-align: center;
+    }
+    #Experience .e_para p
+    {
+        width: 100%;
+    }
+    #Projects_ #card-container
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #Contact_ ul 
+    {
+        flex-direction: column;
+    }
+    #Contact_ ul a div
+    {
+        gap: 15rem;
+    }
+    #Footer_
+    {
+        margin:0;
+    }
+    }
