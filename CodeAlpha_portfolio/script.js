@@ -30,3 +30,5 @@
             });
             
         });
+        //Resume Download Code
+        document.getElementById('resume').addEventListener('click', )
