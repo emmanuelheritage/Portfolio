@@ -130,7 +130,7 @@ html
 }
 #button-container #resume
 {
-    text-decoration: none;
+    border: none;
     cursor: pointer;
     padding: 0.35em;
     background-color: hsl(348, 83%, 50%);
@@ -208,7 +208,7 @@ html
 }
 .HTML
 {
-    background-color: chartreuse;
+    background-color: #80ff0076;
 }
 .HTML .fa-html5
 {
@@ -216,7 +216,7 @@ html
 }
 .CSS
 {
-    background-color: #00ffff;
+    background-color: #00ffff7e;
 }
 .CSS .fa-css3-alt
 {
@@ -267,7 +267,7 @@ html
 }
 #Experience_ #experience-container .exp .p
 {
-    color: rgb(50, 188, 50);
+    color: #32bc32;
 }
 #Experience_ #experience-container .exp h4
 {
@@ -286,7 +286,7 @@ html
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 7.5rem;
+    padding: 7.5rem 0rem;
     gap:5rem;
 }
 #Projects_ h1
@@ -311,9 +311,14 @@ html
     align-items: center;
     font-size: 2rem;
 }
+#Projects_ .pcard img
+{
+    width: 35rem;
+    height: 17.3rem;
+}
 .pcard p
 {
-    max-width: 20rem;
+    max-width: 70%;
     text-align: left;
 }
 /*Contacts*/

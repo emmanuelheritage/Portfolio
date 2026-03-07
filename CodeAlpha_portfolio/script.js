@@ -30,5 +30,20 @@
             });
             
         });
-        //Resume Download Code
-        document.getElementById('resume').addEventListener('click', )
+
+        //Resume download Code
+        
+        document.getElementById('resume').addEventListener('click', () =>{
+            //Creating a temporary <a> element and the filepath to make the download possible
+            const link = document.createElement('a');
+            link.href = 'CodeAlpha_portfolio\Resume\Falodun Emmanuel CV ( Web. Dev.).pdf';
+            link.download = 'Falodun_Emmanuel_Resume';
+
+            //Programmatically adding the link to the body of the page
+            document.body.appendChild(link);
+            // and making it downloadable by 'click' it
+            link.click();
+
+            //Removing the temporary <a> element, cleanup
+            document.body.removeChild(link);
+        });
