@@ -47,3 +47,25 @@
             //Removing the temporary <a> element, cleanup
             document.body.removeChild(link);
         });
+        //Let CSS effects take place as user scrolls past images
+        const homePic = document.getElementById('Homepic');
+        const abPic = document.getElementById('Abpic');
+
+        const observer = new IntersectionObserver((entries)=>
+        {
+            entries.forEach(entry =>
+            {
+                if(entry.isIntersecting)
+                {
+                    entry.target.classList.add('visible');
+                }
+                else{
+                    entry.target.classList.remove('visible');
+                }
+            });
+        },{
+            threshold: 0.5
+        });
+
+        observer.observe(homePic);
+        observer.observe(Abpic);

@@ -62,13 +62,7 @@ html
     transition: 20ms;
     padding: 0.65rem;
 }
-#links a:hover
-{
-    color: rgba(0, 0, 0, 0.927);
-    background-color: aqua;
-    padding: 0.65rem;
-    border-radius: 0.5rem;
-}
+
 /* Hamburger Icon */
 .hamburger
 {
@@ -108,6 +102,22 @@ html
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+#Homepic
+{
+    opacity:0;
+    transform: translateX(-100%);
+    transition: transform 2s ease, opacity 2s ease;
+}
+#Homepic.visible {
+        transform: translateX(0);
+        opacity: 1;}
+#links a:hover
+{
+    color: rgba(0, 0, 0, 0.927);
+    background-color: aqua;
+    padding: 0.65rem;
+    border-radius: 0.5rem;
+}
 #icons
 {
     display: flex;
@@ -132,7 +142,7 @@ html
 {
     border: none;
     cursor: pointer;
-    padding: 0.35em;
+    padding: 0.95em;
     background-color: hsl(348, 83%, 50%);
     border-radius: 0.9rem;
 }
@@ -172,6 +182,17 @@ html
 #about-text p
 {
     font-size: 2rem;
+}
+#Abpic
+{
+    transform: scale(0); 
+    opacity: 0;
+    transition: transform 2s ease, opacity 2s ease;
+}
+#Abpic.visible
+{
+    transform: scale(1);
+    opacity: 1;
 }
 /*Tech Stack*/
 #TechStack
@@ -318,7 +339,7 @@ html
 }
 .pcard p
 {
-    max-width: 70%;
+    max-width: 50%;
     text-align: left;
 }
 /*Contacts*/
