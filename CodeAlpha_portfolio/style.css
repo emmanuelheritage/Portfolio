@@ -468,7 +468,7 @@ html
     #Homepic
 {
     opacity:0;
-    transform: translateX(-30%);
+    transform: translateX(-30px);
     transition: transform 2s ease, opacity 2s ease;
 }
     #Experience_
