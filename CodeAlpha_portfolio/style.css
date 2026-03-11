@@ -531,7 +531,9 @@ section
     }
     #home
     {
-        gap:3rem;
+        gap:0rem;
+        padding: 12rem 3.0rem 5.0rem;
+        margin:0;
     }
     #home-container
     {
@@ -539,7 +541,7 @@ section
         justify-content: center;
         padding: auto;
         margin: auto;
-        gap:3rem;
+        gap:1.5rem;
     }
     #text-container p
     {
@@ -570,7 +572,7 @@ section
     {
         justify-content: center;
         align-items: center;
-        padding: 1.5rem;
+        padding: auto;
         margin: auto;
     }
     #Abpic

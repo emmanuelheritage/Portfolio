@@ -1,5 +1,5 @@
         // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor =>  {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
@@ -36,8 +36,8 @@
         document.getElementById('resume').addEventListener('click', () =>{
             //Creating a temporary <a> element and the filepath to make the download possible
             const link = document.createElement('a');
-            link.href = 'CodeAlpha_portfolio\Resume\Falodun Emmanuel CV ( Web. Dev.).pdf';
-            link.download = 'Falodun_Emmanuel_Resume';
+            link.href = 'CodeAlpha_portfolio\Resume\Falodun_Emmanuel_Resume.pdf';
+            link.download = 'Falodun_Emmanuel_Resume.pdf';
 
             //Programmatically adding the link to the body of the page
             document.body.appendChild(link);
