@@ -529,12 +529,6 @@ section
     {
         padding: 1.5rem 3rem;
     }
-    #home
-    {
-        gap:0rem;
-        padding: 12rem 3.0rem 5.0rem;
-        margin:0;
-    }
     #home-container
     {
         display: flex;
