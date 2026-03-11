@@ -529,6 +529,10 @@ section
     {
         padding: 1.5rem 3rem;
     }
+    #home
+    {
+        padding: 7rem 3.0rem 7.0rem;
+    }
     #home-container
     {
         display: flex;
