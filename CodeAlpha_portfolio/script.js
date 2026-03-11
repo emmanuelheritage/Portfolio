@@ -36,7 +36,7 @@
         document.getElementById('resume').addEventListener('click', () =>{
             //Creating a temporary <a> element and the filepath to make the download possible
             const link = document.createElement('a');
-            link.href = 'CodeAlpha_portfolio\Resume\Falodun_Emmanuel_Resume.pdf';
+            link.href = 'Resume/Falodun_Emmanuel_Resume.pdf';
             link.download = 'Falodun_Emmanuel_Resume.pdf';
 
             //Programmatically adding the link to the body of the page
