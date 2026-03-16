@@ -27,4 +27,4 @@ View the portfolio here:
 
 ## Screenshots
 
-![Homepage](CodeAlpha_tasks\Homepage.png)
+![Homepage](/CodeAlpha_portfolio/Homepage.png)
